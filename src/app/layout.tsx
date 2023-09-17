@@ -19,9 +19,10 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import SupportIcon from "@mui/icons-material/Support";
 import LogoutIcon from "@mui/icons-material/Logout";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
+import products from "@/data/products";
 
 export const metadata = {
-  title: "Madars Delights",
+  title: "Madras Delights",
   description:
     "Madras Delights - Your Authorized Distributor of Aswin Sweets & Snacks in Europe!",
 };

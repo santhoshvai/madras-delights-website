@@ -10,6 +10,8 @@ import AlertTitle from "@mui/material/AlertTitle";
 // import Image from "next/image";
 import Image from "next/image";
 import MediaCard from "@/components/MediaCard";
+import products from "@/data/products";
+import Product from "@/components/Product";
 
 export default function HomePage() {
   return (
@@ -25,15 +27,15 @@ export default function HomePage() {
           }}
         >
           <Typography variant="h3" gutterBottom>
-            Welcome to Madras Delights - Your Authorized Distributor of Aswin
-            Sweets & Snacks in Europe!
+            Welcome to Madras Delights - Your Distributor of Aswin Sweets &
+            Snacks in the Netherlands!
           </Typography>
           <Typography variant="h4" gutterBottom fontWeight={300}>
-            At Madras Delights, we take immense pride in being the exclusive
-            authorized distributor of Aswin Sweets & Snacks across the European
-            region. Our commitment to delivering authentic and high-quality
-            products is unwavering, making us your trusted source for a
-            delectable range of treats from the heart of India.
+            At Madras Delights, we take immense pride in being the distributor
+            of Aswin Sweets & Snacks across the Netherlands. Our commitment to
+            delivering authentic and high-quality products is unwavering, making
+            us your trusted source for a delectable range of treats from the
+            heart of India.
           </Typography>
         </Grid>
         <Grid md={12} lg={6}>
@@ -50,6 +52,20 @@ export default function HomePage() {
             height={480}
             priority
           />
+        </Grid>
+        <Grid xs={12}>
+          <Typography variant="h4" gutterBottom>
+            Our Products
+          </Typography>
+          <Grid container xs={12} spacing={{ xs: 2, md: 2, lg: 3 }}>
+            {products.map((product) => {
+              return (
+                <Grid xs={4} md={3} lg={2} key={product.name}>
+                  <Product product={product} />
+                </Grid>
+              );
+            })}
+          </Grid>
         </Grid>
         <Grid xs={12}>
           <Typography variant="h4" gutterBottom>
