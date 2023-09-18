@@ -33,7 +33,7 @@ export default function HomePage() {
         </Grid>
         <Grid md={12} lg={6}>
           <Image
-            src="/aswin_banner.png"
+            src={require("../../public/aswin_banner.png")}
             alt="Ashwin banner"
             style={{
               margin: "auto",
@@ -41,8 +41,6 @@ export default function HomePage() {
               maxWidth: "100%",
               height: "auto",
             }}
-            width={659}
-            height={480}
             priority
           />
         </Grid>

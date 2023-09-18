@@ -12,7 +12,7 @@ export default function Product({ product }: { product: Product }) {
       }}
     >
       <Image
-        src={"/" + product.image}
+        src={require("../../public/" + product.image)}
         alt={product.name}
         style={{
           margin: "auto",
@@ -20,8 +20,6 @@ export default function Product({ product }: { product: Product }) {
           maxWidth: "100%",
           height: "auto",
         }}
-        width={450}
-        height={675.5}
         priority
       />
 
