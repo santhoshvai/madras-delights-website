@@ -90,7 +90,7 @@ export default function HomePage() {
             {[
               "- They use only organic, cold-pressed groundnut oil, ensuring the oil is never reused.",
               "- All their sweets and snacks are produced in a sprawling 5-acre Aswins factory located on the Chennai-Trichy highway.",
-              "- They only pounded flour, ground at their mill, to create their bites, as they are dedicated to providing the best diet snacks.",
+              "- They use pounded flour, ground at their own mill, to create their bites, as they are dedicated to providing the best diet snacks.",
               "- Their team of 1500 strong, predominantly comprising women, support each other's growth and success.",
             ].map((text) => {
               return (
@@ -110,7 +110,11 @@ export default function HomePage() {
           <Typography variant="body1" gutterBottom>
             Experience the magic of Aswin Sweets & Snacks with Madras Delights.
             To place an order or inquire about our product range, feel free to
-            contact us at madrasdelights@gmail.com (or) Whatsapp us
+            contact us at{" "}
+            <a href="mailto:madrasdelights@gmail.com">
+              madrasdelights@gmail.com
+            </a>{" "}
+            (or) Whatsapp us
           </Typography>
         </Grid>
       </Grid>
