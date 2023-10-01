@@ -2,7 +2,7 @@ const Thattai: Product = {
   name: "Thattai",
   description:
     "A Tamil Nadu specialty, Thattai is a deep-fried savoury cracker made of urad dhal and mild seasoning. It is also called 'Nippattu' in Karnataka and Chekkalu in Andhra Pradesh, Thattai is popularly made around festivals and enjoyed as a snack across the country.",
-  image: "thattai2_900x.png",
+  image: "thattai3_900x.png",
 };
 
 const ThengaiPaalMurukku: Product = {
@@ -23,7 +23,7 @@ const Mixture: Product = {
   name: "Mixture",
   description:
     "Mixture is a well known South Indian delicacy that is tasty, crunchy and lip-smacking delicious. As the name suggests its a mix of fried peanuts, chana dal, kara sev and kara boondhi flavoured with various spices.",
-  image: "mixture2_900x.png",
+  image: "mixture3_900x.png",
 };
 
 const SmallRings: Product = {
@@ -37,24 +37,32 @@ const MiniThattai: Product = {
   name: "Mini Thattai",
   description:
     "A Tamil Nadu specialty, Thatai is a savory cracker made of urad dhal and mild seasoning. Our Mini Thatai is perfectly bite-sized and sure to bring back fond memories with its authentic flavor.",
-  image: "minithattai2_900x.png",
+  image: "minithattai3_900x.png",
 };
 
 const KaraBoondhi: Product = {
   name: "Kara Boondhi",
   description:
     "Kara Boondhi is a light and melt-in-the-mouth after-one-bite delight popular in South India. Graciously sprinkled with nuts and curry leaves, the Kara Boondhi is a spicy surprise for your tastebuds.",
-  image: "kara_boondhi2_900x.png",
+  image: "kara_boondhi3_900x.png",
+};
+
+const AndhraMurukku: Product = {
+  name: "Andhra Murukku",
+  description:
+    "Traditionally made with rice flour, gram flour, and spices, the Andhra Murukku is a crunchy delight that can be enjoyed at any hour of the day.",
+  image: "andhra_murukku_900x.png",
 };
 
 const products: Product[] = [
   Thattai,
-  ThengaiPaalMurukku,
-  KaiMurukku,
+  // ThengaiPaalMurukku,
+  // KaiMurukku,
   Mixture,
-  SmallRings,
+  // SmallRings,
   MiniThattai,
   KaraBoondhi,
+  AndhraMurukku,
 ];
 
 export default products;

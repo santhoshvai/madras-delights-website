@@ -17,6 +17,7 @@ export default function Product({ product }: { product: Product }) {
       <Box
         sx={{
           overflow: "hidden",
+          borderRadius: "10px",
         }}
       >
         <Image

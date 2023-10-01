@@ -20,6 +20,8 @@ import SupportIcon from "@mui/icons-material/Support";
 import LogoutIcon from "@mui/icons-material/Logout";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import products from "@/data/products";
+import NavBar from "@/components/NavBar";
+import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
 
 export const metadata = {
   title: "Madras Delights",
@@ -50,6 +52,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ThemeRegistry>
+          <NavBar />
           {/* <AppBar position="fixed" sx={{ zIndex: 2000 }}>
             <Toolbar sx={{ backgroundColor: 'background.paper' }}>
               <DashboardIcon sx={{ color: '#444', mr: 2, transform: 'translateY(-2px)' }} />
@@ -112,6 +115,7 @@ export default function RootLayout({
           >
             {children}
           </Box>
+          <WhatsappFloatingButton />
         </ThemeRegistry>
       </body>
     </html>
