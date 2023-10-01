@@ -26,7 +26,15 @@ export default function HomePage() {
           <Typography variant="h4" gutterBottom>
             Our Products
           </Typography>
-          <Grid container xs={12} spacing={{ xs: 2, md: 2, lg: 3 }}>
+          <Grid
+            container
+            xs={12}
+            spacing={{ xs: 2, md: 2, lg: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             {products.map((product) => {
               return (
                 <Grid xs={4} md={3} lg={2} key={product.name}>
