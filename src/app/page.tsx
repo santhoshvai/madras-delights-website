@@ -4,6 +4,8 @@ import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import products from "@/data/products";
 import Product from "@/components/Product";
+import uniqueness from "@/data/uniqueness";
+import Unique from "@/components/Unique";
 
 export default function HomePage() {
   return (
@@ -39,6 +41,29 @@ export default function HomePage() {
               return (
                 <Grid xs={4} md={3} lg={2} key={product.name}>
                   <Product product={product} />
+                </Grid>
+              );
+            })}
+          </Grid>
+          <br />
+        </Grid>
+        <Grid xs={12}>
+          <Typography variant="h4" gutterBottom>
+            What makes Aswins special?
+          </Typography>
+          <Grid
+            container
+            xs={12}
+            spacing={{ xs: 2, md: 2, lg: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {uniqueness.map((unique) => {
+              return (
+                <Grid xs={12} md={6} lg={4} key={unique.image}>
+                  <Unique uniqueness={unique} />
                 </Grid>
               );
             })}

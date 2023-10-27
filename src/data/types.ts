@@ -3,3 +3,8 @@ type Product = {
   description: string;
   image: string;
 };
+
+type Uniqueness = {
+  image: string;
+  description: string;
+};
