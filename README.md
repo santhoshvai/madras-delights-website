@@ -1,6 +1,6 @@
 # Madras Delights web
 
-This is the codebase for madrasdelights.com
+This is the codebase for [madrasdelights.com](https://madrasdelights.com/)
 
 ## How to use
 
