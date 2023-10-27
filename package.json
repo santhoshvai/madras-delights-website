@@ -17,7 +17,8 @@
     "@mui/material": "latest",
     "next": "13.x",
     "react": "18.x",
-    "react-dom": "18.x"
+    "react-dom": "18.x",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "@types/node": "latest",
