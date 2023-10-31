@@ -20,7 +20,7 @@ export default function HomePage() {
         >
           <Typography variant="h5" gutterBottom fontWeight={300}>
             At Madras Delights, we take immense pride in being the distributor
-            of Aswin Sweets and Snacks in the Netherlands.
+            of Aswins Sweets and Snacks in the Netherlands.
           </Typography>
           <br />
         </Grid>
