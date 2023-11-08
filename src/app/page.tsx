@@ -81,7 +81,8 @@ export default function HomePage() {
             <a href="mailto:madrasdelights@gmail.com">
               madrasdelights@gmail.com
             </a>{" "}
-            (or) <a href="https://wa.me/31610310653">WhatsApp us</a>
+            (or){" "}
+            <a href="https://wa.me/31610310653">WhatsApp us at +31610310653</a>
           </Typography>
           <br />
           <br />
