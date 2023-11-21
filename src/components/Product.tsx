@@ -23,6 +23,8 @@ export default function Product({ product }: { product: Product }) {
         <Image
           src={require("../../public/" + product.image)}
           alt={product.name}
+          width={442}
+          height={663}
           onMouseOver={() => setHover(true)}
           onMouseOut={() => setHover(false)}
           style={{

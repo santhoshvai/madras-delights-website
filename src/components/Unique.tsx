@@ -22,6 +22,8 @@ export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
         <Image
           src={require("../../public/" + uniqueness.image)}
           alt={uniqueness.image}
+          width={236}
+          height={195}
           style={{
             margin: "auto",
             display: "block",
