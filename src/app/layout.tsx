@@ -16,7 +16,13 @@ export const metadata: Metadata = {
   description:
     "Madras Delights - Your Authorized Distributor of Aswin Sweets & Snacks in the Netherlands!",
   verification: { google: "GYx6b373x-84gWQvxbZHo6LrVKu2az5Jm9ueRVJIM6k" },
+  icons: {
+    icon: { url: "/icon.png", sizes: "256x256", type: "image/png" },
+    apple: { url: "/icon.png", sizes: "256x256", type: "image/png" },
+  },
 };
+
+// <link rel="icon" href="/icon.png?aa90e342a93c30cd" type="image/png" sizes="256x256"/><link rel="apple-touch-icon" href="/apple-icon.png?aa90e342a93c30cd" type="image/png" sizes="256x256"
 
 const DRAWER_WIDTH = 240;
 
