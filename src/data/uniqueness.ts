@@ -13,8 +13,15 @@ const TraditionalHandpoundedFlour: Uniqueness = {
   image: "traditional_handpounded_flour.png",
 };
 
+const NoPreservatives: Uniqueness = {
+  description:
+    "No artificial preservatives, no artificial colors and no artificial flavours",
+  image: "no_preservatives.png",
+};
+
 const uniqueness: Uniqueness[] = [
   GroundnutOil,
+  NoPreservatives,
   SupportWoman,
   TraditionalHandpoundedFlour,
 ];
