@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { Metadata } from "next";
 import Box from "@mui/material/Box";
 import HomeIcon from "@mui/icons-material/Home";
 import StarIcon from "@mui/icons-material/Star";
@@ -10,10 +11,11 @@ import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import NavBar from "@/components/NavBar";
 import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Madras Delights",
   description:
     "Madras Delights - Your Authorized Distributor of Aswin Sweets & Snacks in the Netherlands!",
+  verification: { google: "GYx6b373x-84gWQvxbZHo6LrVKu2az5Jm9ueRVJIM6k" },
 };
 
 const DRAWER_WIDTH = 240;

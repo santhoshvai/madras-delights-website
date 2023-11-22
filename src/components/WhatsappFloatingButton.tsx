@@ -1,9 +1,7 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
 
 export default function WhatsappFloatingButton() {
   return (
@@ -18,7 +16,12 @@ export default function WhatsappFloatingButton() {
     >
       <a aria-label="Chat on WhatsApp" href="https://wa.me/31610310653">
         {" "}
-        <img alt="Chat on WhatsApp" src="WhatsAppButtonGreenLarge.svg" />
+        <img
+          alt="Chat on WhatsApp"
+          src="WhatsAppButtonGreenLarge.svg"
+          width={207}
+          height={48}
+        />
       </a>
     </Box>
   );
