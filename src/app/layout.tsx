@@ -13,7 +13,7 @@ import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
 
 const TITLE = "Madras Delights";
 const DESCRIPTION =
-  "Madras Delights - The authorized distributor of Aswins sweets & snacks in the Netherlands!";
+  "Madras Delights - The authorized distributor of Aswins sweets and snacks in the Netherlands!";
 
 export const metadata: Metadata = {
   title: TITLE,

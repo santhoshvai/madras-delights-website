@@ -20,8 +20,31 @@ export default function HomePage() {
         >
           <Typography variant="h5" gutterBottom fontWeight={300}>
             At Madras Delights, we take immense pride in being the authorized
-            distributor of Aswins sweets & snacks in the Netherlands.
+            distributor of Aswins sweets and snacks in the Netherlands.
           </Typography>
+          <br />
+        </Grid>
+        <Grid xs={12}>
+          <Typography variant="h4" gutterBottom>
+            What makes Aswins sweets and snacks special?
+          </Typography>
+          <Grid
+            container
+            xs={12}
+            spacing={{ xs: 2, md: 2, lg: 3 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {uniqueness.map((unique) => {
+              return (
+                <Grid xs={12} md={6} lg={4} key={unique.image}>
+                  <Unique uniqueness={unique} />
+                </Grid>
+              );
+            })}
+          </Grid>
           <br />
         </Grid>
         <Grid xs={12}>
@@ -41,29 +64,6 @@ export default function HomePage() {
               return (
                 <Grid xs={4} md={3} lg={2} key={product.name}>
                   <Product product={product} />
-                </Grid>
-              );
-            })}
-          </Grid>
-          <br />
-        </Grid>
-        <Grid xs={12}>
-          <Typography variant="h4" gutterBottom>
-            What makes Aswins special?
-          </Typography>
-          <Grid
-            container
-            xs={12}
-            spacing={{ xs: 2, md: 2, lg: 3 }}
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            {uniqueness.map((unique) => {
-              return (
-                <Grid xs={12} md={6} lg={4} key={unique.image}>
-                  <Unique uniqueness={unique} />
                 </Grid>
               );
             })}
