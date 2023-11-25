@@ -32,7 +32,7 @@ export default function Product({ product }: { product: Product }) {
             maxWidth: "100%",
             height: "auto",
             transition: "transform .5s ease",
-            transform: hover ? "scale(1.5)" : "scale(1)",
+            transform: hover ? "scale(2.8)" : "scale(1.8)",
           }}
           priority
         />

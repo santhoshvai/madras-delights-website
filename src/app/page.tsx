@@ -54,7 +54,7 @@ export default function HomePage() {
           <Grid
             container
             xs={12}
-            spacing={{ xs: 2, md: 2, lg: 3 }}
+            spacing={{ xs: 1, md: 2, lg: 3 }}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -62,7 +62,7 @@ export default function HomePage() {
           >
             {products.map((product) => {
               return (
-                <Grid xs={4} md={3} lg={2} key={product.name}>
+                <Grid xs={6} md={4} lg={3} key={product.name}>
                   <Product product={product} />
                 </Grid>
               );
