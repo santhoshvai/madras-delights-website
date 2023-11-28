@@ -16,7 +16,13 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  verification: { google: "GYx6b373x-84gWQvxbZHo6LrVKu2az5Jm9ueRVJIM6k" },
+  verification: {
+    google: "GYx6b373x-84gWQvxbZHo6LrVKu2az5Jm9ueRVJIM6k",
+    other: {
+      "facebook-domain-verification": "ryedykkhm30aj7w2w1zeretpcdae5v",
+    },
+  },
+  keywords: ["aswins", "sweets", "snacks", "netherlands"],
   icons: {
     icon: { url: "/icon.png", sizes: "256x256", type: "image/png" },
     apple: { url: "/icon.png", sizes: "256x256", type: "image/png" },
