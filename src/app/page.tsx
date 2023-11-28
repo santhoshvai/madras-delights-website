@@ -6,24 +6,19 @@ import products from "@/data/products";
 import Product from "@/components/Product";
 import uniqueness from "@/data/uniqueness";
 import Unique from "@/components/Unique";
+import { DESCRIPTION } from "@/data/constants";
 
 export default function HomePage() {
   return (
     <Box sx={{ p: 2, margin: "auto", maxWidth: "100%" }}>
       <Grid container spacing={{ md: 2, lg: 3 }}>
-        <Grid
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <Typography variant="h5" gutterBottom fontWeight={300}>
-            At Madras Delights, we take immense pride in being the authorized
-            distributor of Aswins sweets and snacks in the Netherlands.
+        <Grid>
+          {/* need h1 for SEO */}
+          <Typography variant="h5" component="h1" gutterBottom fontWeight={400}>
+            {DESCRIPTION}
           </Typography>
-          <br />
         </Grid>
+        <br />
         <Grid xs={12}>
           <Typography variant="h4" gutterBottom>
             What makes Aswins sweets and snacks special?

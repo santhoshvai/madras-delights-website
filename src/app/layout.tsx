@@ -10,10 +10,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import NavBar from "@/components/NavBar";
 import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
-
-const TITLE = "Madras Delights";
-const DESCRIPTION =
-  "Madras Delights - The authorized distributor of Aswins sweets and snacks in the Netherlands!";
+import { TITLE, DESCRIPTION } from "@/data/constants";
 
 export const metadata: Metadata = {
   title: TITLE,
