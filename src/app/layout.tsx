@@ -75,6 +75,8 @@ export default function RootLayout({
                 "@type": "WholesaleStore",
                 name: "Madras Delights",
                 description: DESCRIPTION,
+                image: "https://madrasdelights.com/logo-nobackground.svg",
+                telephone: "+31610310653",
               }),
             }}
             id="item-jsonld"
