@@ -11,6 +11,7 @@ import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import NavBar from "@/components/NavBar";
 import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
 import { TITLE, DESCRIPTION } from "@/data/constants";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -63,11 +64,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <ThemeRegistry>
-          <NavBar />
-          {/* <AppBar position="fixed" sx={{ zIndex: 2000 }}>
+    <>
+      <html lang="en">
+        <body>
+          <Script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "WholesaleStore",
+                name: "Madras Delights",
+                description: DESCRIPTION,
+              }),
+            }}
+            id="item-jsonld"
+          />
+          <ThemeRegistry>
+            <NavBar />
+            {/* <AppBar position="fixed" sx={{ zIndex: 2000 }}>
             <Toolbar sx={{ backgroundColor: 'background.paper' }}>
               <DashboardIcon sx={{ color: '#444', mr: 2, transform: 'translateY(-2px)' }} />
               <Typography variant="h6" noWrap component="div" color="black">
@@ -75,7 +89,7 @@ export default function RootLayout({
               </Typography>
             </Toolbar>
           </AppBar> */}
-          {/* <Drawer
+            {/* <Drawer
             sx={{
               width: DRAWER_WIDTH,
               flexShrink: 0,
@@ -91,7 +105,7 @@ export default function RootLayout({
             anchor="left"
           >
             <Divider /> */}
-          {/* <List>
+            {/* <List>
             {LINKS.map(({ text, href, icon: Icon }) => (
               <ListItem key={href} disablePadding>
                 <ListItemButton component={Link} href={href}>
@@ -103,8 +117,8 @@ export default function RootLayout({
               </ListItem>
             ))}
           </List> */}
-          {/* <Divider sx={{ mt: "auto" }} /> */}
-          {/* <List>
+            {/* <Divider sx={{ mt: "auto" }} /> */}
+            {/* <List>
             {PLACEHOLDER_LINKS.map(({ text, icon: Icon }) => (
               <ListItem key={text} disablePadding>
                 <ListItemButton>
@@ -116,22 +130,23 @@ export default function RootLayout({
               </ListItem>
             ))}
           </List> */}
-          {/* </Drawer> */}
-          <Box
-            component="main"
-            sx={{
-              flexGrow: 1,
-              bgcolor: "background.default",
-              // ml: `${DRAWER_WIDTH}px`,
-              // mt: ["8px", "12px", "16px"],
-              p: 3,
-            }}
-          >
-            {children}
-          </Box>
-          <WhatsappFloatingButton />
-        </ThemeRegistry>
-      </body>
-    </html>
+            {/* </Drawer> */}
+            <Box
+              component="main"
+              sx={{
+                flexGrow: 1,
+                bgcolor: "background.default",
+                // ml: `${DRAWER_WIDTH}px`,
+                // mt: ["8px", "12px", "16px"],
+                p: 3,
+              }}
+            >
+              {children}
+            </Box>
+            <WhatsappFloatingButton />
+          </ThemeRegistry>
+        </body>
+      </html>
+    </>
   );
 }
