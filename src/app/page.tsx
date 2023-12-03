@@ -70,9 +70,8 @@ export default function HomePage() {
             Contact Us
           </Typography>
           <Typography variant="h5" gutterBottom fontWeight={300}>
-            Experience the magic of Aswin Sweets and Snacks with Madras
-            Delights. To place an order or inquire about our product range, feel
-            free to contact us at{" "}
+            To place an order or inquire about our product range, feel free to
+            contact us at{" "}
             <a href="mailto:madrasdelights@gmail.com">
               madrasdelights@gmail.com
             </a>{" "}
