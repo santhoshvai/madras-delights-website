@@ -54,6 +54,14 @@ const AndhraMurukku: Product = {
   image: "andhra_murukku_900x.png",
 };
 
+const TapiocaFingerChips: Product = {
+  name: "Tapioca Finger chips",
+  description:
+    "Tapioca Finger chips are thin, stick-like, crunchy, and spicy goodness made from tapioca. Taking a bite of it can make your taste buds dance for more. It makes a perfect tea-time snack and a go-to savoury to accompany your meals.",
+  image: "tapioca_fingers_900x.png",
+  imageScale: { normal: 1.2, hover: 2 },
+};
+
 const products: Product[] = [
   Thattai,
   // ThengaiPaalMurukku,
@@ -61,8 +69,9 @@ const products: Product[] = [
   Mixture,
   // SmallRings,
   MiniThattai,
-  KaraBoondhi,
+  TapiocaFingerChips,
   AndhraMurukku,
+  KaraBoondhi,
 ];
 
 export default products;

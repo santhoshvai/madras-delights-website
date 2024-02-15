@@ -5,6 +5,14 @@ import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+const getScale = (hover: boolean, product: Product) => {
+  let scale = hover ? 2.8 : 1.8;
+  if (product.imageScale) {
+    scale = hover ? product.imageScale.hover : product.imageScale.normal;
+  }
+  return "scale(" + scale + ")";
+};
+
 export default function Product({ product }: { product: Product }) {
   const [hover, setHover] = React.useState(false);
   return (
@@ -32,7 +40,7 @@ export default function Product({ product }: { product: Product }) {
             maxWidth: "100%",
             height: "auto",
             transition: "transform .5s ease",
-            transform: hover ? "scale(2.8)" : "scale(1.8)",
+            transform: getScale(hover, product),
           }}
           priority
         />
