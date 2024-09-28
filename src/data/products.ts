@@ -67,7 +67,6 @@ const KaraSev: Product = {
   description:
     "Kara sev is a popular festive snack in South India. It has primarily made with besan and rice flour and flavoured with jeera and black pepper. The texture is thick but melts in your mouth like butter and is a definite crowd pleaser.",
   image: "karasev3_442x.png",
-  imageScale: { normal: 1.2, hover: 2 },
 };
 
 const SeepuSeedai: Product = {
@@ -75,7 +74,6 @@ const SeepuSeedai: Product = {
   description:
     "Seepu Seedai is a crunchy South Indian delicacy traditionally made with coconut milk, dal, and many lip-smacking flavors. This melt-in-the-mouth after-one-bite snack is a perfect evening savoury loved by kids and adults alike.ß",
   image: "SEEPUSEEDAI3_540x.png",
-  imageScale: { normal: 1.2, hover: 2 },
 };
 
 const products: Product[] = [
