@@ -30,7 +30,7 @@ const SmallRings: Product = {
   name: "Small Rings",
   description:
     "Small ring murukku is popular among kids and is a definite must have staple if you have kids in the house. Made with rice flour and spiced to perfection with added crispiness to treat your tastebuds.",
-  image: "smallrings2_900x.png",
+  image: "smallrings3_540x.png",
 };
 
 const MiniThattai: Product = {
@@ -62,16 +62,34 @@ const TapiocaFingerChips: Product = {
   imageScale: { normal: 1.2, hover: 2 },
 };
 
+const KaraSev: Product = {
+  name: "Kara Sev",
+  description:
+    "Kara sev is a popular festive snack in South India. It has primarily made with besan and rice flour and flavoured with jeera and black pepper. The texture is thick but melts in your mouth like butter and is a definite crowd pleaser.",
+  image: "karasev3_442x.png",
+  imageScale: { normal: 1.2, hover: 2 },
+};
+
+const SeepuSeedai: Product = {
+  name: "Seepu Seedai",
+  description:
+    "Seepu Seedai is a crunchy South Indian delicacy traditionally made with coconut milk, dal, and many lip-smacking flavors. This melt-in-the-mouth after-one-bite snack is a perfect evening savoury loved by kids and adults alike.ß",
+  image: "SEEPUSEEDAI3_540x.png",
+  imageScale: { normal: 1.2, hover: 2 },
+};
+
 const products: Product[] = [
   Thattai,
   // ThengaiPaalMurukku,
   // KaiMurukku,
+  SeepuSeedai,
   Mixture,
-  // SmallRings,
   MiniThattai,
-  TapiocaFingerChips,
   AndhraMurukku,
   KaraBoondhi,
+  KaraSev,
+  SmallRings,
+  TapiocaFingerChips,
 ];
 
 export default products;
