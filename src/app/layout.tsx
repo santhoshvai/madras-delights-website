@@ -146,12 +146,12 @@ export default function RootLayout({
                 bgcolor: "background.default",
                 // ml: `${DRAWER_WIDTH}px`,
                 // mt: ["8px", "12px", "16px"],
-                p: 3,
+                // p: 3,
               }}
             >
               {children}
             </Box>
-            <WhatsappFloatingButton />
+            {/* <WhatsappFloatingButton /> */}
           </ThemeRegistry>
         </body>
       </html>

@@ -1,7 +1,7 @@
-import { Arima } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 
-const arima = Arima({
+const openSans = Open_Sans({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -15,7 +15,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: arima.style.fontFamily,
+    fontFamily: openSans.style.fontFamily,
   },
   components: {
     MuiAlert: {
