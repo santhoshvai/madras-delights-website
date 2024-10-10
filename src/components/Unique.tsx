@@ -20,8 +20,9 @@ export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
         }}
       >
         <Image
-          src={require("../../public/" + uniqueness.image)}
+          src={`/${uniqueness.image}`}
           alt={uniqueness.image}
+          width={236}
           height={195}
           style={{
             margin: "auto",
@@ -32,7 +33,7 @@ export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
           priority
         />
       </Box>
-      <Typography variant="h5" sx={{ textAlign: "center" }}>
+      <Typography variant="h6" sx={{ textAlign: "center" }}>
         {uniqueness.description}
       </Typography>
     </Box>

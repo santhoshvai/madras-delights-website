@@ -16,7 +16,7 @@ export default function NavBar() {
       }}
     >
       <Image
-        src={require("../../public/logo-nobackground.svg")}
+        src={`/logo-nobackground.svg`}
         alt="madras delights logo"
         priority
         width={256}

@@ -61,7 +61,7 @@ export default function Product({ product }: { product: Product }) {
             priority
           />
         </Box>
-        <Typography variant="h5" sx={{ textAlign: "center" }}>
+        <Typography variant="h6" sx={{ textAlign: "center" }}>
           {product.name}
         </Typography>
       </Box>

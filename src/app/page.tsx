@@ -165,9 +165,11 @@ const Products = () => {
         })}
       </Grid>
       <Grid xs={12} sx={{ p: 3 }}>
-        <Typography variant="h4" gutterBottom>
+        <br />
+        <Typography variant="h5" fontWeight={500} gutterBottom>
           What makes Aswins sweets and snacks special?
         </Typography>
+        <br />
         <Grid
           container
           xs={12}
@@ -195,10 +197,12 @@ const OfflineStore = ({
   storeName,
   address,
   googleMapsLink,
+  webStoreLink,
 }: {
   storeName: string;
   address: string;
   googleMapsLink: string;
+  webStoreLink?: string;
 }) => {
   return (
     <li>
@@ -208,6 +212,12 @@ const OfflineStore = ({
       <a href={googleMapsLink} target="_blank" rel="noopener noreferrer">
         {address}
       </a>
+      <br />
+      {!!webStoreLink && (
+        <a href={webStoreLink} target="_blank" rel="noopener noreferrer">
+          Web Store
+        </a>
+      )}
     </li>
   );
 };
@@ -234,13 +244,14 @@ const OnlineStore = ({
 const Stores = () => {
   return (
     <Grid xs={12} sx={{ p: 3 }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h5" gutterBottom>
         You can find our products in the following stores:
       </Typography>
-      <Typography variant="h5" gutterBottom fontWeight={400}>
+      <br />
+      <Typography variant="h6" gutterBottom fontWeight={400}>
         Almere/Lelystad Region
       </Typography>
-      <Typography variant="h6" fontWeight={200}>
+      <Typography variant="body1" fontWeight={200}>
         <ul>
           <OfflineStore
             storeName="Ganesh Food Centre"
@@ -341,14 +352,8 @@ const Stores = () => {
             storeName="Dbanyan (also ships throughout the Netherlands and Belgium)"
             address="Meerwater 15, 5658 LP, Eindhoven"
             googleMapsLink="https://maps.app.goo.gl/HxnMxqEhaBkfmeot8"
+            webStoreLink={"https://dbanyan.nl/search?type=product&q=aswins"}
           />
-          <a
-            href={"https://dbanyan.nl/search?type=product&q=aswins"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Web Store
-          </a>
         </ul>
       </Typography>
       <Typography variant="h5" gutterBottom fontWeight={400}>
@@ -373,20 +378,20 @@ const Contact = () => {
       {/* <Typography variant="h4" gutterBottom>
         Contact Us
       </Typography> */}
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h5" gutterBottom>
         Wholesale and Retail Inquiries
       </Typography>
-      <Typography variant="h5" gutterBottom fontWeight={300}>
+      <Typography variant="h6" gutterBottom fontWeight={200}>
         Interested in stocking our snacks in your store or buying in bulk? We're
         here to help! For wholesale or retail inquiries, please contact us at:{" "}
         <a href="mailto:madrasdelights@gmail.com">madrasdelights@gmail.com</a>{" "}
         (or) <a href="https://wa.me/31610310653">WhatsApp us at +31610310653</a>
       </Typography>
       <br />
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h5" gutterBottom>
         Bulk Orders for Parties, Functions, and Corporate Events
       </Typography>
-      <Typography variant="h5" gutterBottom fontWeight={300}>
+      <Typography variant="h6" gutterBottom fontWeight={200}>
         Planning a party, function, or corporate event? We offer bulk snack
         orders tailored to your needs! Whether it's for a festive celebration, a
         corporate meeting, or any special occasion, we're here to provide
