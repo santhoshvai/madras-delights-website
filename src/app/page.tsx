@@ -46,7 +46,13 @@ const StyledTab = styled((props: { label: string }) => (
 ))(({ theme }) => ({
   textTransform: "none",
   fontWeight: theme.typography.fontWeightRegular,
-  fontSize: theme.typography.pxToRem(24),
+  fontSize: theme.typography.pxToRem(16),
+  "@media (min-width:600px)": {
+    fontSize: theme.typography.pxToRem(20),
+  },
+  "@media (min-width:769px)": {
+    fontSize: theme.typography.pxToRem(24),
+  },
   marginRight: theme.spacing(2),
   color: "rgba(255, 255, 255, 0.7)",
   "&.Mui-selected": {

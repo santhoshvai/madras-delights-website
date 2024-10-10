@@ -4,7 +4,7 @@ import { createTheme } from "@mui/material/styles";
 const openSans = Open_Sans({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
-  display: "swap",
+  // display: "swap",
 });
 
 const theme = createTheme({
