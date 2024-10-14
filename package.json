@@ -15,7 +15,8 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
-    "next": "13.x",
+    "@mui/material-nextjs": "^6.1.3",
+    "next": "14.x",
     "react": "18.x",
     "react-dom": "18.x",
     "sharp": "^0.32.6"

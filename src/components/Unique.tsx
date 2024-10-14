@@ -28,7 +28,7 @@ export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
             margin: "auto",
             display: "block",
             maxWidth: "100%",
-            height: "auto",
+            width: "auto",
           }}
           priority
         />
