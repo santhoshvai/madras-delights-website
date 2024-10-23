@@ -20,7 +20,10 @@ const Products = () => {
         {products.map((product) => {
           return (
             <Grid xs={4} md={3} key={product.name}>
-              <Product product={product} />
+              <Product
+                product={product}
+                imageSizes="(max-width: 899px) 33.33vw, 25vw"
+              />
             </Grid>
           );
         })}
@@ -31,7 +34,6 @@ const Products = () => {
         sx={{
           paddingTop: 8,
           alignSelf: "center",
-          //   backgroundColor: "#f5f5f5",
         }}
       >
         <Grid
@@ -49,16 +51,20 @@ const Products = () => {
         </Grid>
         <Grid
           container
-          //   maxWidth={"md"}
+          // maxWidth={"lg"}
           spacing={{ xs: 2, md: 2, lg: 3 }}
           sx={{
             justifyContent: "center",
+            margin: "auto",
           }}
         >
           {uniqueness.map((unique) => {
             return (
-              <Grid xs={12} md={6} lg={4} key={unique.image}>
-                <Unique uniqueness={unique} />
+              <Grid xs={12} md={6} lg={4} key={unique.description}>
+                <Unique
+                  uniqueness={unique}
+                  imageSizes="(max-width: 899px) 100vw, (max-width: 1199px) 50vw, 33vw"
+                />
               </Grid>
             );
           })}

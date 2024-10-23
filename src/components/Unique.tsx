@@ -4,8 +4,15 @@ import * as React from "react";
 import Image from "next/image";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { Uniqueness } from "@/data/types";
 
-export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
+export default function Unique({
+  uniqueness,
+  imageSizes,
+}: {
+  uniqueness: Uniqueness;
+  imageSizes: string;
+}) {
   return (
     <Box
       sx={{
@@ -20,10 +27,9 @@ export default function Unique({ uniqueness }: { uniqueness: Uniqueness }) {
         }}
       >
         <Image
-          src={`/${uniqueness.image}`}
-          alt={uniqueness.image}
-          width={236}
-          height={195}
+          src={uniqueness.image}
+          alt={uniqueness.description}
+          sizes={imageSizes}
           style={{
             margin: "auto",
             display: "block",

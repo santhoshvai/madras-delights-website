@@ -86,6 +86,11 @@ const Stores = () => {
             link="https://thanimafresh.nl/search?type=product%2Carticle%2Cpage&options%5Bprefix%5D=last&q=aswins"
           />
           <OfflineStore
+            storeName="Taste of Asia Market"
+            address="Schutterstraat 46, 1315 VJ Almere"
+            googleMapsLink="https://maps.app.goo.gl/DDe4VaTP5b7tP9tA6"
+          />
+          <OfflineStore
             storeName="Toko Almere Poort"
             address="Europalaan 907, 1363 BM Almere"
             googleMapsLink="https://maps.app.goo.gl/TMQKQyMBGZ6dyoTi6"
@@ -145,6 +150,11 @@ const Stores = () => {
             address="Lindenlaan 376, 1185 NM Amstelveen"
             googleMapsLink="https://maps.app.goo.gl/C9SQqmtjQXWaCrPc7"
           />
+          <OfflineStore
+            storeName="Spice Indian Supermarket"
+            address="Karel Doormanweg 18, 1181 WE Amstelveen"
+            googleMapsLink="https://maps.app.goo.gl/ZaUyULpM8TRseFoAA"
+          />
         </ul>
       </Grid>
       <Grid>
@@ -168,6 +178,11 @@ const Stores = () => {
             address="Meerwater 15, 5658 LP, Eindhoven"
             googleMapsLink="https://maps.app.goo.gl/HxnMxqEhaBkfmeot8"
             webStoreLink={"https://dbanyan.nl/search?type=product&q=aswins"}
+          />
+          <OfflineStore
+            storeName="Sensa Supermarkt"
+            address="Bredalaan 71, 5652 JB Eindhoven"
+            googleMapsLink="https://maps.app.goo.gl/hHztfQBsWNh6hqYS9"
           />
         </ul>
       </Grid>

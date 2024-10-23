@@ -1,14 +1,16 @@
-type Product = {
+import { StaticImageData } from "next/image";
+
+export type Product = {
   name: string;
   description: string;
-  image: string;
+  image: StaticImageData;
   imageScale?: {
     normal: number;
     hover: number;
   };
 };
 
-type Uniqueness = {
-  image: string;
+export type Uniqueness = {
+  image: StaticImageData;
   description: string;
 };
