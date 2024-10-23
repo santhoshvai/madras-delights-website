@@ -11,19 +11,25 @@ const Products = () => {
       <Grid
         container
         spacing={{ xs: 1, md: 2, lg: 3 }}
-        maxWidth={"md"}
+        maxWidth={"md"} // max 900px
         sx={{
           justifyContent: "center",
-          alignSelf: "center",
+          margin: "auto",
         }}
       >
         {products.map((product) => {
           return (
-            <Grid xs={4} md={3} key={product.name}>
+            <Grid xs={4} key={product.name}>
               <Product
                 product={product}
-                imageSizes="(max-width: 899px) 33.33vw, 25vw"
+                imageSizes="(max-width: 600px) 200px, 300px"
               />
+              {/*
+              - max width is 900px:
+              The image takes 4 columns out of 12, so image width is 33.33% of the container width.
+              aka container-width/3
+              - when width is 600px:
+               */}
             </Grid>
           );
         })}

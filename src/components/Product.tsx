@@ -68,7 +68,6 @@ export default function ProductComponent({
               maxWidth: "100%",
               height: "auto",
             }}
-            className="product-image"
             priority
           />
         </Box>
