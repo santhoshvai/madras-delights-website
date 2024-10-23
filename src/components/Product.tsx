@@ -5,6 +5,7 @@ import Image from "next/image";
 import { styled } from "@mui/material/styles";
 import Tooltip, { TooltipProps, tooltipClasses } from "@mui/material/Tooltip";
 import Box from "@mui/material/Box";
+import { Product } from "../data/types";
 import Typography from "@mui/material/Typography";
 
 const getScale = (hover: boolean, product: Product) => {
@@ -27,8 +28,13 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
   },
 }));
 
-export default function Product({ product }: { product: Product }) {
-  const [hover, setHover] = React.useState(false);
+export default function ProductComponent({
+  product,
+  imageSizes,
+}: {
+  product: Product;
+  imageSizes: string;
+}) {
   return (
     <LightTooltip title={product.description}>
       <Box
@@ -41,23 +47,28 @@ export default function Product({ product }: { product: Product }) {
           sx={{
             overflow: "hidden",
             borderRadius: "10px",
+            // css transition for image zooming
+            "& img": {
+              transition: "transform 0.5s ease",
+              transform: getScale(false, product),
+              "&:hover": {
+                transform: getScale(true, product),
+              },
+            },
           }}
         >
           <Image
-            src={`/${product.image}`}
+            src={product.image}
             alt={product.name}
-            width={442}
-            height={663}
-            onMouseOver={() => setHover(true)}
-            onMouseOut={() => setHover(false)}
+            sizes={imageSizes}
+            placeholder="blur"
             style={{
               margin: "auto",
               display: "block",
               maxWidth: "100%",
               height: "auto",
-              transition: "transform .5s ease",
-              transform: getScale(hover, product),
             }}
+            className="product-image"
             priority
           />
         </Box>
