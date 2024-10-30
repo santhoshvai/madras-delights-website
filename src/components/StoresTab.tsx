@@ -5,11 +5,13 @@ const OfflineStore = ({
   address,
   googleMapsLink,
   webStoreLink,
+  isWhatsApp,
 }: {
   storeName: string;
   address: string;
   googleMapsLink: string;
   webStoreLink?: string;
+  isWhatsApp?: boolean;
 }) => {
   return (
     <li>
@@ -22,7 +24,7 @@ const OfflineStore = ({
       <br />
       {!!webStoreLink && (
         <a href={webStoreLink} target="_blank" rel="noopener noreferrer">
-          Web store
+          {isWhatsApp ? "WhatsApp" : "Web store"}
         </a>
       )}
     </li>
@@ -32,9 +34,11 @@ const OfflineStore = ({
 const OnlineStore = ({
   storeName,
   link,
+  isWhatsApp,
 }: {
   storeName: string;
   link: string;
+  isWhatsApp?: boolean;
 }) => {
   return (
     <li>
@@ -42,7 +46,7 @@ const OnlineStore = ({
         {storeName}
       </Typography>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        Web Store
+        {isWhatsApp ? "WhatsApp" : "Web store"}
       </a>
     </li>
   );
@@ -69,6 +73,11 @@ const Stores = () => {
         </Typography>
         <ul>
           <OfflineStore
+            storeName="Anu Foods Almere (previously called Rurban Fresh)"
+            address="Markerkant 12 06-09, 1314 AK Almere"
+            googleMapsLink="https://maps.app.goo.gl/9jkz1JiPjsYwVygF7"
+          />
+          <OfflineStore
             storeName="Ganesh Food Centre"
             address="Edvard Munchweg 28 F, 1328 MA Almere"
             googleMapsLink="https://maps.app.goo.gl/D9q2pmZ6DsbJ5nF57"
@@ -76,6 +85,11 @@ const Stores = () => {
           <OnlineStore
             storeName="Laal Mirchi"
             link="https://www.laalmirchi.nl/search?q=aswins"
+          />
+          <OnlineStore
+            storeName="Lely Kirana - Lelystad region exclusive"
+            link="https://chat.whatsapp.com/IB5eOs2X0zuK5WHkiGb0DO"
+            isWhatsApp
           />
           <OnlineStore
             storeName="Sara Foods"
@@ -191,11 +205,11 @@ const Stores = () => {
           Arnhem Region
         </Typography>
         <ul>
-          <li>
-            <Typography variant="h6" fontWeight={200}>
-              Desi Basket
-            </Typography>
-          </li>
+          <OnlineStore
+            storeName="Desi Basket Arnhem"
+            link="https://api.whatsapp.com/send/?phone=31641561134"
+            isWhatsApp
+          />
         </ul>
       </Grid>
     </Grid>
