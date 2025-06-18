@@ -1,6 +1,8 @@
+**This project is now archived, wont be maintained**
+
 # Madras Delights web
 
-This is the codebase for [madrasdelights.com](https://madrasdelights.com/)
+This *was* the codebase for [madrasdelights.com](https://madrasdelights.com/)
 
 ## How to use
 
